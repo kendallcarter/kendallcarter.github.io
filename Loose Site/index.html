@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>The Band Loose</title>
+	<link rel="stylesheet" href="styles/slicknav.css"> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> <script type="text/javascript"> $(document).ready(function(){ $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+	}); </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="SlickNav/slicknav.css" />
+	<script src="SlickNav/jquery.slicknav.min.js"></script>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	
+	<div class="top">
+		<a href="../index.html" class="bar-item button padding-large">Loose</a>
+		<a href="/groups/bio.html" class="bar-item button padding-large hide-small">Bio</a>
+		<a href="/groups/media.html" class="bar-item button padding-large hide-small">Media</a>
+		<div class="dropdown-hover hide-small">
+		  <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+		  <div class="dropdown-content bar-block card-4">
+			<a href="/groups/schedule.html" class="bar-item button">Schedule</a>
+			<a href="/groups/contact.html" class="bar-item button">Contact</a>
+			<a href="/groups/links.html" class="bar-item button">Links</a>
+		  </div>
+		</div>	
+	</div>
+
+
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+	
+<nav id="mobile_menu"></nav>
+
+
+	<main>
+		
+					
+			<div class="slideshow-container">
+
+				
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 5</div>
+					<img src="../images/loose/loose12.jpeg" style="width:100%">
+				
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 5</div>
+					<img src="../images/loose/loose2.jpeg" style="width:100%">
+				
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 5</div>
+					<img src="../images/loose/loose3.jpeg" style="width:100%">
+				
+				</div>
+	
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 5</div>
+					<img src="../images/loose/loose4.jpeg" style="width:100%">
+				
+				</div>
+				
+				<div class="mySlides fade">
+					<div class="numbertext">5 / 5</div>
+					<img src="../images/loose/loose.jpeg" style="width:100%">
+				
+				</div>
+
+			</div>
+			
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+
+			<script>
+				let slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) 
+				{slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 5000); 
+				}
+			</script>
+
+		<div id="intro">
+			<h1 style="font-style: italic;">Stay Loose</h1>
+
+			<p>Loose is a funk/rock/alternative band from Normal, Illinois. Loose was born out of the DIY music scene at Illinois State Univeristy, and has performed at a veriety of the DIY venues around ISU, UIUC, UIC, and other schools. The group include Jack on bass, Kendall on guitar, Sean on Drums, and Joey on keys. They're currently working on their debut singles and EP to be released in 2023.</p>
+		</div>
+
+			
+		
+
+		<br>
+
+
+		<div id="schedule">
+			
+			<table>
+
+			</table>
+			<div class="container content padding-64" style="max-width:800px">
+				<h3>Here's Where We'll Be Playing Next</h3>
+			
+				<div class="row-padding padding-32" style="margin:0 -16px">
+				  <div class="third margin-bottom">
+					<img src="/images/coffeehouse-at-night.jpeg" alt="Coffeehouse" style="width:100%">
+					<div class="container white">
+					  <p><b>Coffeehouse</b></p>
+					  <p class="opacity">Jan 14th 2023</p>
+					  <p>With 4x4 Animal Style at the Cofffeehouse in Normal Illinois as part of PMA's Music Night</p>
+					  <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+					</div>
+				  </div>
+				  <div class="third margin-bottom">
+					<img src="/images/coffeehouse-at-night.jpeg" alt="Coffeehouse" style="width:100%">
+					<div class="container white">
+					  <p><b>Fucking Coffehouse again</b></p>
+					  <p class="opacity">Jan 20th 2023</p>
+					  <p>With 4x4 Animal Style at the Rose Bowl in Urbana Illinois supporting touring act Motel Breaktfast</p>
+					  <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+					</div>
+				  </div>
+				  <div class="third margin-bottom">
+					<img src="/images/concert.webp" alt="Stumbling Block" style="width:100%">
+					<div class="container white">
+					  <p><b>Stumbling Block</b></p>
+					  <p class="opacity">Jan 28th 2023</p>
+					  <p>With Loose at the Stumbling Block DIY venue in Normal, Illinois</p>
+					  <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+					</div>
+				  </div>
+				  More Dates Coming Soon
+				</div>
+			</div>
+		</div>
+
+		<div id="contactUs">
+			<form action="/groups/subscribe.html" method="get"
+        		name="registration_form" id="registration_form">
+				<fieldset>
+        			<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="email">Email:</label>
+	        		<input type="email" name="email" id="email" required><br>
+					<label>&nbsp;</label>
+					<input type="submit" id="Subscribe" value="Subscribe">
+					<br>
+				</fieldset>
+			</form>
+		</div>
+
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-45de48b4-dd92-413f-942b-f4ff751c4b3b"></div>
+	</main>
+
+	<footer>
+		<p>&copy; 
+			<script> 
+				var today = new Date().getFullYear();
+				document.write(today);
+				</script> Kendall Carter & loose
+		</p>	
+	</footer>
+	
+
+</body>
+
+</html>
