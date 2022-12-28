@@ -1,0 +1,12 @@
+Error in ID field of record 1: 873
+Error in Zip code field of record 1: 6179
+Error in Purchase amount field of record 1: $100.75
+Error in ID field of record 2: 24BE4
+Error in Number purchased field of record 2: 
+Error in Purchase amount field of record 2:  500.34
+Error in ID field of record 3: 987AEF
+Error in Number purchased field of record 3: -5
+Error in Purchase amount field of record 3: $783.55
+Error in ID field of record 4: 678DBZ
+Error in Number purchased field of record 4: 1e
+Error in Purchase amount field of record 4: $.38

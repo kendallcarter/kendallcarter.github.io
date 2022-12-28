@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Kendall Carter</title>
+	<link rel="stylesheet" href="../styles/slicknav.css"> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> <script type="text/javascript"> $(document).ready(function(){ $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+	}); </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div>
+			<h2>Kendall Carter</h2>
+		</div>	
+		<link rel="stylesheet" href="../styles/main.css">
+		
+	</header>
+	
+	<nav id="mobile_menu"></nav>
+	
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html" class="current">Home</a></li>
+			<li><a href="animal.html">4x4 Animal Style</a>
+				<ul>
+					<li><a herf="#">Raft</a></li>
+					<li><a herf="#">EP</a></li>
+					<li><a herf="#">Videos</a></li>
+					<li><a herf="#">Pictures</a></li>
+				</ul>
+			</li>
+			<li><a href="loose.html">Loose</a></li>
+			<li class="lastitem"><a href="timeless.html">Timeless</a>		
+			</li>   
+			<li><a href="jazz.html">Jazz</a></li>      
+		</ul>
+	</nav>
+
+	
+
+	<main>
+		<h1>Loose</h1>
+
+		<div class="slideshow-container">
+
+			
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="../images/kenny.jpeg" style="width:100%">
+			
+			</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="../images/kennyandmanny.jpeg" style="width:100%">
+			
+			</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="../images/Kenny5.jpeg" style="width:100%">
+			
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="../images/Kenny 6.jpeg" style="width:100%">
+			
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		
+		
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+		<script>
+			let slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) 
+			  {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 5000); 
+			}
+			</script>
+
+		<p>
+			Loose ia a 4 piece indie rock/jazz/funk band from Normal, Illinois. Born out of the budding ISU DIY scene, this group met through jazz gigs, but have quickly evolved their sound to reflect a veriety of influences from all genres. 
+			More bullshit to come 
+			They're currently recording their first EP. They Frequently play shows around various Illinois Collegic campuses 
+		</p>
+		
+		<section>
+	
+			
+				
+				
+			
+		</section>
+
+	</main>
+	<!-- <aside>
+		<nav id="nav_list">
+			<ul>
+				<li><a herf="../products/props.html">Contact Me</a></li>
+				<li><a herf="../products/costumes.html">Listen to Me</a></li>
+				<li><a herf="../products/special.html">Learn More About Me</a></li>
+			</ul>
+		</nav>
+	</aside> -->
+	<footer>
+		&copy; 2022 Kendall Carter
+</body>
+
+</html>

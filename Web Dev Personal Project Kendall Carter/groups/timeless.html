@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Kendall Carter</title>
+	<link rel="stylesheet" href="../styles/slicknav.css"> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> <script type="text/javascript"> $(document).ready(function(){ $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+	}); </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div>
+			<h2>Kendall Carter</h2>
+		</div>	
+		<link rel="stylesheet" href="../styles/main.css">
+		
+	</header>
+	
+	<nav id="mobile_menu"></nav>
+	
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html" class="current">Home</a></li>
+			<li><a href="animal.html">4x4 Animal Style</a>
+				<ul>
+					<li><a herf="#">Raft</a></li>
+					<li><a herf="#">EP</a></li>
+					<li><a herf="#">Videos</a></li>
+					<li><a herf="#">Pictures</a></li>
+				</ul>
+			</li>
+			<li><a href="loose.html">Loose</a></li>
+			<li class="lastitem"><a href="timeless.html">Timeless</a>		
+			</li>   
+			<li><a href="jazz.html">Jazz</a></li>      
+		</ul>
+	</nav>
+
+	
+
+	<main>
+		<h1>Timeless</h1>
+
+		<div class="slideshow-container">
+
+			
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="../images/kenny.jpeg" style="width:100%">
+			
+			</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="../images/kennyandmanny.jpeg" style="width:100%">
+			
+			</div>
+		
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="../images/Kenny5.jpeg" style="width:100%">
+			
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="../images/Kenny 6.jpeg" style="width:100%">
+			
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		
+		
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+		<script>
+			let slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) 
+			  {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 5000); 
+			}
+			</script>
+
+
+		
+		<section>
+			<p>
+				TiMELeSS Evolution is Chicago's next generation of blues-rock, soul, and R&B!
+
+Based in Southland Chicago, TiMELeSS Evolution has built a reputation on creating a thrilling and musical experience that captivates any audience wherever they go. Inspired by a handful of genres across decades, the supergroup puts its own stamp on familiar and timeless classics that spread joy throughout every generation.	
+
+The band is fronted by guitarist and vocalist Kendall Carter, one of the Chicago area's premier instrumentalists and performers, who at a young age, has performed at notable venues such as House of Blues Chicago, Buddy Guy's Legends, the Chicago Blues Festival, and even down in Memphis, TN. Right alongside Kendall is Manny Gonzalez, another exceptional talent on guitar–one of Chicagoland's best. Each one of the band’s top-tier musicians takes influence from a wide array of artists from Michael Jackson to Stevie Wonder to Prince, from Jimi Hendrix to Stevie Ray Vaughan to John Mayer, and from George Benson to D'Angelo to Robert Glasper.	
+
+Throughout their time playing together, they've won the hearts of thousands throughout southland Chicago with a captivating sound like no other from such a young generation.
+			</p>
+			
+				
+				
+			
+		</section>
+
+	</main>
+	<!-- <aside>
+		<nav id="nav_list">
+			<ul>
+				<li><a herf="../products/props.html">Contact Me</a></li>
+				<li><a herf="../products/costumes.html">Listen to Me</a></li>
+				<li><a herf="../products/special.html">Learn More About Me</a></li>
+			</ul>
+		</nav>
+	</aside> -->
+	<footer>
+		&copy; 2022 Kendall Carter
+</body>
+
+</html>

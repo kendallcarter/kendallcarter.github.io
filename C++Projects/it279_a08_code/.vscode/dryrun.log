@@ -1,0 +1,37 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a08_code'
+ 
+2022-08-25 17:12:00.113 xcodebuild[39137:519130] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+2022-08-25 17:12:00.114 xcodebuild[39137:519130] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+In file included from src/include/a8_q1_app.cpp:4:
+src/include/DisjSet.cpp:1:10: error: 'DisjSet.h' file not found with <angled> include; use "quotes" instead
+#include <DisjSet.h>
+         ^~~~~~~~~~~
+         "DisjSet.h"
+
+src/include/a8_q1_app.cpp:10:10: fatal error: 'MergeSort.h' file not found
+
+#include "MergeSort.h"
+         ^~~~~~~~~~~~~
+2 errors generated.
+
+src/include/DisjSet.cpp:1:10: error: 'DisjSet.h' file not found with <angled> include; use "quotes" instead
+#include <DisjSet.h>
+         ^~~~~~~~~~~
+         "DisjSet.h"
+
+1 error generated.
+
+make: Leaving directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a08_code'
+ 
+make: Entering directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a08_code'
+g++ -std=c++11 -Wall -o obj/DisjSet.o -c src/include/DisjSet.cpp
+ 
+g++ -std=c++11 -Wall -o obj/DoubleHash.o -c src/include/DoubleHash.cpp
+g++ -std=c++11 -Wall -o obj/Student.o -c src/include/Student.cpp
+g++ -std=c++11 -Wall -o obj/a8_q1_app.o -c src/include/a8_q1_app.cpp
+g++ -std=c++11 -Wall -o a8_q1_app obj/DisjSet.o obj/DoubleHash.o obj/Student.o obj/a8_q1_app.o 
+make: Leaving directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a08_code'
+ 

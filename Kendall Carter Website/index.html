@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Kendall Carter</title>
+	<link rel="stylesheet" href="styles/slicknav.css"> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> <script type="text/javascript"> $(document).ready(function(){ $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+	}); </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="SlickNav/slicknav.css" />
+	<script src="SlickNav/jquery.slicknav.min.js"></script>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	
+	<div class="top">
+		<a href="../index.html" class="bar-item button padding-large">Home</a>
+		<a href="/groups/animal.html" class="bar-item button padding-large hide-small">Resume</a>
+		<a href="/groups/loose.html" class="bar-item button padding-large hide-small">Projects</a>
+		  <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+		  <div class="dropdown-content bar-block card-4">
+			<a href="/groups/schedule.html" class="bar-item button">Schedule</a>
+			<a href="/groups/contact.html" class="bar-item button">Contact</a>
+			<a href="/groups/links.html" class="bar-item button">Links</a>
+		  </div>
+		</div>	
+	</div>
+
+
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+	
+<nav id="mobile_menu"></nav>
+
+
+	<main>
+		
+					
+			<div class="slideshow-container">
+
+				
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 4</div>
+					<img src="../images/kenny.jpeg" style="width:100%">
+				
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 4</div>
+					<img src="../images/kennyandmanny.jpeg" style="width:100%">
+				
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 4</div>
+					<img src="../images/Kenny5.jpeg" style="width:100%">
+				
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 4</div>
+					<img src="../images/Kenny 6.jpeg" style="width:100%">
+				
+				</div>
+			
+
+			</div>
+			
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+
+			<script>
+				let slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) 
+				{slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 5000); 
+				}
+			</script>
+
+		<div id="intro">
+			<h1>Kendall Carter</h1>
+
+			<p>I am a young musician from the south suburbs of Chicago, Illinois. I am a guitarist, bassist, songwriter, and producer who works in all generes including Jazz, Soul, Rock, Blues, Funk, Pop, and others. I play with 3 main groups including 4x4 Animal Style, Loose, and Timeless</p>
+
+		</div>
+
+		<div>
+			Kendall Carter
+(708) 238- 1754
+128 Timberlane Road Matteson, IL 60443
+EDUCATION
+kendallacarter1@gmail.com
+112 West Locust St , Apt #1 Normal, IL 61761
+ Illinois State University , 100 N University St, Normal, IL 61761 - Bachelor’s of Science, Info Systems 3.4 GPA, Information Systems: Web Dev major, Guitar Jazz Studies minor, Anticipated Spring 2023
+Homewood Flossmoor High School, 999 Kedzie Ave, Flossmoor, IL 60422
+3.6 GPA, National Honor Society, 4 years of Spanish, 4 years Honor Roll, Jazz, Guitar ensemble.
+EXPERIENCE
+Illinois State University- Support Technician August 2020-October 2021
+● Provide hardware and software support to the students, faculty, and staff of the university
+● Manage customer tickets, utilize IT tools like Powershell, Excel, and Cherwell, effectively
+communicate through phone calls and email, write technical documents and notes, train new
+technicians
+● Computer hardware, software, network, peripheral and printer troubleshooting
+● Collaborate to complete large university wide projects such as Life Cycle replacement program
+Illinois State University- Music Instructor January 2020-Present
+● Teach basic guitar lessons each week to elementary school students, beginners to intermediate
+● Communicate with parents, track progress, organize and instruct personalized lessons.
+Omnicon, 2207 Muriel Ct, Joliet, IL 60433- Office Assistant, Junior Field Inspector May 2019-August 2019
+● Assist with administrative tasks, using office software such as Excel and Word
+● Travel to job sites and meet with property owners, take pictures, get signatures, handle payments
+● Inspect damage, take samples, and work with other Field Inspectors to estimate losses on homes
+SKILLS
+● Java
+● C++
+● PowerShell
+● Android
+Development
+● JavaScript
+● Microsoft Office ● Algorithms/Data
+Structures ● XML
+● Teaching and Training ● Customer Service
+● HTML/CSS
+● IT Services
+● Music and music
+instruction ● Git
+● Python
+		</div>	
+		
+
+		<div id="contactUs">
+			<form action="/groups/subscribe.html" method="get"
+        		name="registration_form" id="registration_form">
+				<fieldset>
+        			<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="email">Email:</label>
+	        		<input type="email" name="email" id="email" required><br>
+					<label>&nbsp;</label>
+					<input type="submit" id="Subscribe" value="Subscribe">
+					<br>
+				</fieldset>
+			</form>
+		</div>
+
+		
+	</main>
+
+	<footer>
+		<p>&copy; 
+			<script> 
+				var today = new Date().getFullYear();
+				document.write(today);
+				</script> Kendall Carter
+		</p>	
+	</footer>
+	
+
+</body>
+
+</html>

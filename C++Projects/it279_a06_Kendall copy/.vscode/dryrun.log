@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a06_Kendall'
+ 
+make: Leaving directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a06_Kendall'
+make: Entering directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a06_Kendall'
+g++ -std=c++11 -Wall -o obj/BinarySearchTree.o -c src/include/BinarySearchTree.cpp
+g++ -std=c++11 -Wall -o obj/SeparateChain.o -c src/include/SeparateChain.cpp
+g++ -std=c++11 -Wall -o obj/Student.o -c src/include/Student.cpp
+g++ -std=c++11 -Wall -o obj/a4_app.o -c src/include/a4_app.cpp
+g++ -std=c++11 -Wall -o a4_app obj/BinarySearchTree.o obj/SeparateChain.o obj/Student.o obj/a4_app.o 
+make: Leaving directory `/Users/kendallcarter/Documents/VisualStudioCode /C++Projects/it279_a06_Kendall'
+ 
